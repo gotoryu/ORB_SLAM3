@@ -40,6 +40,8 @@ endif()
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
+include_directories(/opt/homebrew/include)
+link_directories(/opt/homebrew/lib)
 add_library(DBoW2 SHARED ${SRCS_DBOW2} ${SRCS_DUTILS})
 target_link_libraries(DBoW2 ${OpenCV_LIBS})
 

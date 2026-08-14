@@ -80,6 +80,10 @@ ENDIF(EIGEN3_FOUND)
 SET(G2O_CXX_COMPILER "${CMAKE_CXX_COMPILER_ID} ${CMAKE_CXX_COMPILER}")
 configure_file(config.h.in ${g2o_SOURCE_DIR}/config.h)
 
+include_directories(/opt/homebrew/include)
+link_directories(/opt/homebrew/lib)
+include_directories(/opt/homebrew/include/eigen3)
+
 # Set up the top-level include directories
 INCLUDE_DIRECTORIES(
 ${g2o_SOURCE_DIR}/core

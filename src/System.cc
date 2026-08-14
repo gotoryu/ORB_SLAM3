@@ -230,7 +230,7 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
     //if(false) // TODO
     {
         mpViewer = new Viewer(this, mpFrameDrawer,mpMapDrawer,mpTracker,strSettingsFile,settings_);
-        mptViewer = new thread(&Viewer::Run, mpViewer);
+        // mptViewer = new thread(&Viewer::Run, mpViewer);
         mpTracker->SetViewer(mpViewer);
         mpLoopCloser->mpViewer = mpViewer;
         mpViewer->both = mpFrameDrawer->both;

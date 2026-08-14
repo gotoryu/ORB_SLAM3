@@ -12,20 +12,20 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall   -O3")
 set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -march=native")
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -march=native")
 
-# Check C++11 or C++0x support
+# Check C++14 or C++0x support
 include(CheckCXXCompilerFlag)
-CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
+CHECK_CXX_COMPILER_FLAG("-std=c++14" COMPILER_SUPPORTS_CXX14)
 CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
-if(COMPILER_SUPPORTS_CXX11)
-   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-   add_definitions(-DCOMPILEDWITHC11)
-   message(STATUS "Using flag -std=c++11.")
+if(COMPILER_SUPPORTS_CXX14)
+   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+   add_definitions(-DCOMPILEDWITHC14)
+   message(STATUS "Using flag -std=c++14.")
 elseif(COMPILER_SUPPORTS_CXX0X)
    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
    add_definitions(-DCOMPILEDWITHC0X)
    message(STATUS "Using flag -std=c++0x.")
 else()
-   message(FATAL_ERROR "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
+   message(FATAL_ERROR "The compiler ${CMAKE_CXX_COMPILER} has no C++14 support. Please use a different C++ compiler.")
 endif()
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
@@ -50,6 +50,8 @@ ${PROJECT_SOURCE_DIR}/Thirdparty/Sophus
 ${EIGEN3_INCLUDE_DIR}
 ${Pangolin_INCLUDE_DIRS}
 )
+include_directories(/opt/homebrew/include)
+link_directories(/opt/homebrew/lib)
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 
@@ -172,6 +174,14 @@ add_executable(stereo_euroc
         Examples/Stereo/stereo_euroc.cc)
 target_link_libraries(stereo_euroc ${PROJECT_NAME})
 
+add_executable(stereo_euroc_pangolin
+        Examples/Stereo/stereo_euroc_pangolin_main_thread.cc)
+target_link_libraries(stereo_euroc_pangolin ${PROJECT_NAME})
+
+add_executable(stereo_quest3
+        Examples/Stereo/stereo_quest3.cc)
+target_link_libraries(stereo_quest3 ${PROJECT_NAME})
+
 add_executable(stereo_tum_vi
         Examples/Stereo/stereo_tum_vi.cc)
 target_link_libraries(stereo_tum_vi ${PROJECT_NAME})
@@ -192,6 +202,14 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular)
 add_executable(mono_tum
         Examples/Monocular/mono_tum.cc)
 target_link_libraries(mono_tum ${PROJECT_NAME})
+
+add_executable(mono_s20fe
+        Examples/Monocular/mono_s20fe.cc)
+target_link_libraries(mono_s20fe ${PROJECT_NAME})
+
+add_executable(mono_euroc_pangolin
+        Examples/Monocular/mono_euroc_pangolin_main_thread.cc)
+target_link_libraries(mono_euroc_pangolin ${PROJECT_NAME})
 
 add_executable(mono_kitti
         Examples/Monocular/mono_kitti.cc)
