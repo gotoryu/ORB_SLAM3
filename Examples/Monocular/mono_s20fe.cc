@@ -11,13 +11,16 @@
 #include <iomanip>
 #include <iostream>
 #include <opencv2/core/core.hpp>
+#include <unistd.h>
 
 using namespace std;
 
-void LoadCustomImages(const string& strImagePath, vector<string>& vstrImages, vector<double>& vTimestamps, int fps);
+void LoadCustomImages(const string &strImagePath, vector<string> &vstrImages, vector<double> &vTimestamps, int fps);
 
-int main(int argc, char** argv) {
-     if (argc < 5) {
+int main(int argc, char **argv)
+{
+     if (argc < 5)
+     {
           cerr << endl
                << "Usage: ./mono_s20fe path_to_vocabulary path_to_settings fps path_to_image_folder_1 (path_to_image_folder_2 ... path_to_image_folder_n)" << endl;
           return 1;
@@ -37,7 +40,8 @@ int main(int argc, char** argv) {
 
      int tot_images = 0;
      int seq;
-     for (seq = 0; seq < num_seq; seq++) {
+     for (seq = 0; seq < num_seq; seq++)
+     {
           cout << "Loading images for sequence " << seq << "..." << endl;
 
           string pathSeq(argv[seq + 4]);
@@ -57,25 +61,29 @@ int main(int argc, char** argv) {
      vTimesTrack.resize(tot_images);
 
      cv::Mat im;
-     for (seq = 0; seq < num_seq; seq++) {
+     for (seq = 0; seq < num_seq; seq++)
+     {
           cout << endl
                << "-------" << endl;
           cout << "Start processing sequence " << seq << " ..." << endl;
           cout << "Images in the sequence: " << nImages[seq] << endl
                << endl;
 
-          for (int ni = 0; ni < nImages[seq]; ni++) {
+          for (int ni = 0; ni < nImages[seq]; ni++)
+          {
                im = cv::imread(vstrImages[seq][ni], cv::IMREAD_UNCHANGED);
                double tframe = vTimestamps[seq][ni];
 
-               if (im.empty()) {
+               if (im.empty())
+               {
                     cerr << endl
                          << "Failed to load image at: "
                          << string(vstrImages[seq][ni]) << endl;
                     return 1;
                }
 
-               if (imageScale != 1.f) {
+               if (imageScale != 1.f)
+               {
                     int width = im.cols * imageScale;
                     int height = im.rows * imageScale;
                     cv::resize(im, im, cv::Size(width, height));
@@ -91,56 +99,67 @@ int main(int argc, char** argv) {
                vTimesTrack[ni * (seq + 1)] = ttrack;
 
                double T = 0;
-               if (ni < nImages[seq] - 1) {
+               if (ni < nImages[seq] - 1)
+               {
                     T = vTimestamps[seq][ni + 1] - tframe;
-               } else if (ni > 0) {
+               }
+               else if (ni > 0)
+               {
                     T = tframe - vTimestamps[seq][ni - 1];
                }
 
-               if (ttrack < T) {
+               if (ttrack < T)
+               {
                     usleep((T - ttrack) * 1e6);
                }
           }
      }
 
+     std::cout << "\n----------------------------------" << std::endl;
+     std::cout << "Video processing finished. The map is now stabilizing." << std::endl;
+     std::cout << "You can safely explore the map in the viewer." << std::endl;
+     std::cout << "Press ENTER in this terminal to save the map and exit..." << std::endl;
+     std::cout << "----------------------------------\n"
+               << std::endl;
+
+     std::cin.get();
+
      SLAM.Shutdown();
+
+     SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory_S20FE.txt");
 
      sort(vTimesTrack.begin(), vTimesTrack.end());
      float totaltime = 0;
-     for (int ni = 0; ni < tot_images; ni++) {
+     for (int ni = 0; ni < tot_images; ni++)
+     {
           totaltime += vTimesTrack[ni];
      }
 
-     cout << "-------" << endl
+     cout << "\n-------" << endl
           << endl;
      cout << "median tracking time: " << vTimesTrack[tot_images / 2] << endl;
      cout << "mean tracking time: " << totaltime / tot_images << endl;
 
-     SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory_S20FE.txt");
-
-     std::cout << "Processing finished. Press ENTER in the terminal to exit..." << std::endl;
-
-     // Keep the main process alive so Pangolin/Qt viewer stays interactive
-     std::cin.get();
-
-     // Optional: Force a clean termination to prevent Qt destructor segfaults
      std::cout << "Exiting application..." << std::endl;
-     std::exit(0);
+     _exit(0);
 
      return 0;
 }
 
-void LoadCustomImages(const string& strImagePath, vector<string>& vstrImages, vector<double>& vTimestamps, int fps) {
+void LoadCustomImages(const string &strImagePath, vector<string> &vstrImages, vector<double> &vTimestamps, int fps)
+{
      int index = 1;
      double frame_time = 1.0 / fps;
 
-     while (true) {
+     while (true)
+     {
           stringstream ss;
           ss << setfill('0') << setw(5) << index;
           string filename = strImagePath + "/" + ss.str() + ".png";
 
           ifstream f(filename.c_str());
-          if (!f.good()) {
+          if (!f.good())
+          {
                break;
           }
 

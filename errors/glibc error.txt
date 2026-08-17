@@ -1,0 +1,78 @@
+WARNING: CPU random generator seem to be failing, disabling hardware random number generation
+WARNING: RDRND generated: 0xffffffff 0xffffffff 0xffffffff 0xffffffff
+fps = 60
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: S20FE_1280x720_Map
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 14
+Creation of new map with last KF id: 750
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 566
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:750; Map init KF:750
+New Map created with 124 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 13
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+Local Mapping STOP
+Local Mapping RELEASE
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Fatal glibc error: pthread_mutex_lock.c:88 (___pthread_mutex_lock): assertion failed: mutex->__data.__owner == 0
