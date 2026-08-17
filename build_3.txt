@@ -1,0 +1,653 @@
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/build$ make -j4
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+Build type: Release
+-- Using flag -std=c++14.
+OPENCV VERSION:
+4.6.0
+CMake Warning at CMakeLists.txt:43 (find_package):
+  By not providing "Findrealsense2.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "realsense2", but CMake did not find one.
+
+  Could not find a package configuration file provided by "realsense2" with
+  any of the following names:
+
+    realsense2Config.cmake
+    realsense2-config.cmake
+
+  Add the installation prefix of "realsense2" to CMAKE_PREFIX_PATH or set
+  "realsense2_DIR" to a directory containing one of the above files.  If
+  "realsense2" provides a separate development package or SDK, be sure it has
+  been installed.
+
+
+CMake Deprecation Warning at Thirdparty/g2o/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- BUILD TYPE:Release
+-- Compiling on Unix
+-- Configuring done (0.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/build
+[ 28%] Built target g2o
+[ 54%] Built target ORB_SLAM3
+[ 56%] Built target stereo_kitti
+[ 60%] Built target stereo_tum_vi
+[ 60%] Built target rgbd_tum
+[ 62%] Built target stereo_euroc
+[ 63%] Building CXX object CMakeFiles/mono_s20fe.dir/Examples/Monocular/mono_s20fe.cc.o
+[ 67%] Built target mono_tum
+[ 67%] Built target mono_kitti
+[ 68%] Building CXX object CMakeFiles/mono_euroc.dir/Examples/Monocular/mono_euroc.cc.o
+[ 70%] Built target mono_tum_vi
+[ 72%] Built target mono_inertial_euroc
+[ 72%] Linking CXX executable /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Monocular/mono_s20fe
+[ 73%] Building CXX object CMakeFiles/stereo_inertial_euroc.dir/Examples/Stereo-Inertial/stereo_inertial_euroc.cc.o
+[ 75%] Built target mono_inertial_tum_vi
+[ 76%] Built target stereo_inertial_tum_vi
+[ 77%] Built target rgbd_tum_old
+[ 79%] Built target stereo_kitti_old
+[ 81%] Built target stereo_euroc_old
+[ 83%] Built target stereo_tum_vi_old
+[ 85%] Built target mono_tum_old
+[ 87%] Built target mono_kitti_old
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/mono_s20fe.dir/build.make:173: /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Monocular/mono_s20fe] Error 1
+make[1]: *** [CMakeFiles/Makefile2:280: CMakeFiles/mono_s20fe.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 88%] Building CXX object CMakeFiles/mono_euroc_old.dir/Examples_old/Monocular/mono_euroc.cc.o
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/ORBVocabulary.h:23,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/KeyFrame.h:26,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/MapPoint.h:23,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/FrameDrawer.h:24,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Viewer.h:23,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Tracking.h:26,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/System.h:31,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Monocular/mono_euroc.cc:26:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/ORBVocabulary.h:23,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/KeyFrame.h:26,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/MapPoint.h:23,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/FrameDrawer.h:24,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Viewer.h:23,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Tracking.h:26,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/System.h:31,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Stereo-Inertial/stereo_inertial_euroc.cc:30:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/ORBVocabulary.h:23,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/KeyFrame.h:26,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/MapPoint.h:23,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/FrameDrawer.h:24,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Viewer.h:23,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Tracking.h:26,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/System.h:31,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples_old/Monocular/mono_euroc.cc:26:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Frame.h:30,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/KeyFrame.h:28:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/ImuTypes.h: In member function ‘void ORB_SLAM3::IMU::Preintegrated::printMeasurements() const’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/ImuTypes.h:204:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ORB_SLAM3::IMU::Preintegrated::integrable>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  204 |         for(int i=0; i<mvMeasurements.size(); i++){
+      |                      ~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Frame.h:30,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/KeyFrame.h:28:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/ImuTypes.h: In member function ‘void ORB_SLAM3::IMU::Preintegrated::printMeasurements() const’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/ImuTypes.h:204:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ORB_SLAM3::IMU::Preintegrated::integrable>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  204 |         for(int i=0; i<mvMeasurements.size(); i++){
+      |                      ~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Converter.h:26,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Frame.h:33:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: At global scope:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/include/eigen3/Eigen/LU:11,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/Sophus/sophus/so2.hpp:12,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/Sophus/sophus/se2.hpp:7,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/Sophus/sophus/geometry.hpp:7,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Frame.h:28:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Converter.h:26,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Frame.h:33:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: At global scope:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/include/eigen3/Eigen/LU:11,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/Sophus/sophus/so2.hpp:12,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/Sophus/sophus/se2.hpp:7,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/Sophus/sophus/geometry.hpp:7,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Frame.h:28:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |   typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                              ^~~~~~~~~~
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |   typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                              ^~~~~~~~~~
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Frame.h:30,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/KeyFrame.h:28:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/ImuTypes.h: In member function ‘void ORB_SLAM3::IMU::Preintegrated::printMeasurements() const’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/ImuTypes.h:204:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ORB_SLAM3::IMU::Preintegrated::integrable>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  204 |         for(int i=0; i<mvMeasurements.size(); i++){
+      |                      ~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Converter.h:26,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Frame.h:33:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: At global scope:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/include/eigen3/Eigen/LU:11,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/Sophus/sophus/so2.hpp:12,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/Sophus/sophus/se2.hpp:7,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/Sophus/sophus/geometry.hpp:7,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Frame.h:28:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |     typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                        ~~~~~~^~~~~~~~~~~~
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |     typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                        ~~~~~~^~~~~~~~~~~~
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |     typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                        ~~~~~~^~~~~~~~~~~~
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |     typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                        ~~~~~~^~~~~~~~~~~~
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |     typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                        ~~~~~~^~~~~~~~~~~~
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |     typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                        ~~~~~~^~~~~~~~~~~~
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |     typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                        ~~~~~~^~~~~~~~~~~~
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |     typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                        ~~~~~~^~~~~~~~~~~~
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |     typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                        ~~~~~~^~~~~~~~~~~~
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |     typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                        ~~~~~~^~~~~~~~~~~~
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Atlas.h:27,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/FrameDrawer.h:25:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:47:9: warning:   when initialized here [-Wreorder]
+   47 |         KannalaBrandt8(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLappingArea(2,0) ,tvr(nullptr) {
+      |         ^~~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>, float)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:53:9: warning:   when initialized here [-Wreorder]
+   53 |         KannalaBrandt8(const std::vector<float> _vParameters, const float _precision) : GeometricCamera(_vParameters),
+      |         ^~~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(ORB_SLAM3::KannalaBrandt8*)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:59:9: warning:   when initialized here [-Wreorder]
+   59 |         KannalaBrandt8(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {
+      |         ^~~~~~~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Atlas.h:27,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/FrameDrawer.h:25:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:47:9: warning:   when initialized here [-Wreorder]
+   47 |         KannalaBrandt8(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLappingArea(2,0) ,tvr(nullptr) {
+      |         ^~~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>, float)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:53:9: warning:   when initialized here [-Wreorder]
+   53 |         KannalaBrandt8(const std::vector<float> _vParameters, const float _precision) : GeometricCamera(_vParameters),
+      |         ^~~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(ORB_SLAM3::KannalaBrandt8*)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:59:9: warning:   when initialized here [-Wreorder]
+   59 |         KannalaBrandt8(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {
+      |         ^~~~~~~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Atlas.h:27,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/FrameDrawer.h:25:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:47:9: warning:   when initialized here [-Wreorder]
+   47 |         KannalaBrandt8(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLappingArea(2,0) ,tvr(nullptr) {
+      |         ^~~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>, float)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:53:9: warning:   when initialized here [-Wreorder]
+   53 |         KannalaBrandt8(const std::vector<float> _vParameters, const float _precision) : GeometricCamera(_vParameters),
+      |         ^~~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(ORB_SLAM3::KannalaBrandt8*)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:59:9: warning:   when initialized here [-Wreorder]
+   59 |         KannalaBrandt8(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {
+      |         ^~~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Monocular/mono_euroc.cc: In function ‘int main(int, char**)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Monocular/mono_euroc.cc:81:11: warning: unused variable ‘dT’ [-Wunused-variable]
+   81 |     float dT = 1.f/fps;
+      |           ^~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Monocular/mono_euroc.cc:86:12: warning: unused variable ‘t_resize’ [-Wunused-variable]
+   86 |     double t_resize = 0.f;
+      |            ^~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Monocular/mono_euroc.cc:87:12: warning: unused variable ‘t_track’ [-Wunused-variable]
+   87 |     double t_track = 0.f;
+      |            ^~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples_old/Monocular/mono_euroc.cc: In function ‘int main(int, char**)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples_old/Monocular/mono_euroc.cc:81:11: warning: unused variable ‘dT’ [-Wunused-variable]
+   81 |     float dT = 1.f/fps;
+      |           ^~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples_old/Monocular/mono_euroc.cc:86:12: warning: unused variable ‘t_resize’ [-Wunused-variable]
+   86 |     double t_resize = 0.f;
+      |            ^~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples_old/Monocular/mono_euroc.cc:87:12: warning: unused variable ‘t_track’ [-Wunused-variable]
+   87 |     double t_track = 0.f;
+      |            ^~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Stereo-Inertial/stereo_inertial_euroc.cc: In function ‘int main(int, char**)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Stereo-Inertial/stereo_inertial_euroc.cc:139:16: warning: unused variable ‘t_rect’ [-Wunused-variable]
+  139 |         double t_rect = 0.f;
+      |                ^~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Stereo-Inertial/stereo_inertial_euroc.cc:140:16: warning: unused variable ‘t_resize’ [-Wunused-variable]
+  140 |         double t_resize = 0.f;
+      |                ^~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Stereo-Inertial/stereo_inertial_euroc.cc:141:16: warning: unused variable ‘t_track’ [-Wunused-variable]
+  141 |         double t_track = 0.f;
+      |                ^~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Stereo-Inertial/stereo_inertial_euroc.cc:142:13: warning: unused variable ‘num_rect’ [-Wunused-variable]
+  142 |         int num_rect = 0;
+      |             ^~~~~~~~
+[ 89%] Linking CXX executable /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Monocular/mono_euroc
+[ 90%] Linking CXX executable /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples_old/Monocular/mono_euroc_old
+[ 90%] Built target mono_euroc
+[ 90%] Built target mono_euroc_old
+[ 91%] Linking CXX executable /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Stereo-Inertial/stereo_inertial_euroc
+[ 91%] Built target stereo_inertial_euroc
+make: *** [Makefile:91: all] Error 2
+
