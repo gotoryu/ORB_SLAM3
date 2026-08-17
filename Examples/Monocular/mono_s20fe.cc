@@ -141,7 +141,6 @@ int main(int argc, char **argv)
      cout << "mean tracking time: " << totaltime / tot_images << endl;
 
      std::cout << "Exiting application..." << std::endl;
-     _exit(0);
 
      return 0;
 }

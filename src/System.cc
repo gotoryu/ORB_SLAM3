@@ -525,25 +525,35 @@ namespace ORB_SLAM3
 
         cout << "Shutting down SLAM System ..." << endl;
 
-        usleep(2000000);
+        if (mpViewer)
+        {
+            mpViewer->RequestFinish();
+            while (!mpViewer->isFinished())
+                usleep(5000);
+        }
+
+        if (mpLoopCloser->isRunningGBA())
+        {
+            mpLoopCloser->RequestFinish();
+        }
 
         mpLocalMapper->RequestFinish();
         mpLoopCloser->RequestFinish();
 
         cout << "Waiting for threads to finish ..." << endl;
 
-        // if(mpViewer)
-        // {
-        //     mpViewer->RequestFinish();
-        //     while(!mpViewer->isFinished())
-        //         usleep(5000);
-        // }
-
         // Wait until all thread have effectively stopped
-        while (!mpLocalMapper->isFinished() || !mpLoopCloser->isFinished() || mpLoopCloser->isRunningGBA())
+        while (!mpLocalMapper->isFinished() || !mpLoopCloser->isFinished())
         {
-            usleep(50000);
+            usleep(5000);
         }
+
+        if (mptLocalMapping && mptLocalMapping->joinable())
+            mptLocalMapping->join();
+        if (mptLoopClosing && mptLoopClosing->joinable())
+            mptLoopClosing->join();
+        if (mptViewer && mptViewer->joinable())
+            mptViewer->join();
 
         if (!mStrSaveAtlasToFile.empty())
         {

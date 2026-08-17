@@ -359,7 +359,9 @@ void Map::SetLastMapChange(int currentChangeId)
 void Map::PreSave(std::set<GeometricCamera*> &spCams)
 {
     int nMPWithoutObs = 0;
-    for(MapPoint* pMPi : mspMapPoints)
+
+    std::vector<MapPoint*> vpMapPoints(mspMapPoints.begin(), mspMapPoints.end());
+    for(MapPoint* pMPi : vpMapPoints)
     {
         if(!pMPi || pMPi->isBad())
             continue;
@@ -369,13 +371,18 @@ void Map::PreSave(std::set<GeometricCamera*> &spCams)
             nMPWithoutObs++;
         }
         map<KeyFrame*, std::tuple<int,int>> mpObs = pMPi->GetObservations();
+        std::vector<KeyFrame*> vpEraseObservations;
+
         for(map<KeyFrame*, std::tuple<int,int>>::iterator it= mpObs.begin(), end=mpObs.end(); it!=end; ++it)
         {
             if(it->first->GetMap() != this || it->first->isBad())
             {
-                pMPi->EraseObservation(it->first);
+                vpEraseObservations.push_back(it->first);
             }
+        }
 
+        for (KeyFrame* pKF : vpEraseObservations) {
+            pMPi->EraseObservation(pKF);
         }
     }
 
@@ -390,7 +397,8 @@ void Map::PreSave(std::set<GeometricCamera*> &spCams)
 
     // Backup of MapPoints
     mvpBackupMapPoints.clear();
-    for(MapPoint* pMPi : mspMapPoints)
+    std::vector<MapPoint*> vpMapPointsToBackup(mspMapPoints.begin(), mspMapPoints.end());
+    for(MapPoint* pMPi : vpMapPointsToBackup)
     {
         if(!pMPi || pMPi->isBad())
             continue;
@@ -401,7 +409,8 @@ void Map::PreSave(std::set<GeometricCamera*> &spCams)
 
     // Backup of KeyFrames
     mvpBackupKeyFrames.clear();
-    for(KeyFrame* pKFi : mspKeyFrames)
+    std::vector<KeyFrame*> vpKeyFramesToBackup(mspKeyFrames.begin(), mspKeyFrames.end());
+    for(KeyFrame* pKFi : vpKeyFramesToBackup)
     {
         if(!pKFi || pKFi->isBad())
             continue;

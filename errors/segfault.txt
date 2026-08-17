@@ -44,8 +44,8 @@ Load File
 Initialization of Atlas from file: S20FE_1280x720_Map
 Starting to read the save binary file
 End to load the save binary file
-Creation of new map with id: 15
-Creation of new map with last KF id: 764
+Creation of new map with id: 20
+Creation of new map with last KF id: 880
 Seq. Name: 
 There are 1 cameras in the atlas
 Camera 0 is pinhole
@@ -56,14 +56,15 @@ Images in the sequence: 566
 
 QSocketNotifier: Can only be used with threads started with QThread
 Starting the Viewer
-First KF:764; Map init KF:764
+First KF:880; Map init KF:880
 New Map created with 124 points
 *Merge detected
 Local Mapping STOP
-Change to map with id: 14
+Change to map with id: 19
 Local Mapping RELEASE
 Local Mapping RELEASE
 Merge finished!
+Local Mapping STOP
 
 ----------------------------------
 Video processing finished. The map is now stabilizing.
@@ -73,5 +74,15 @@ Press ENTER in this terminal to save the map and exit...
 
 Shutting down SLAM System ...
 Waiting for threads to finish ...
-terminate called after throwing an instance of 'std::system_error'
-  what():  Invalid argument
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0228924
+mean tracking time: 0.0231057
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
