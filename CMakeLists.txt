@@ -168,6 +168,10 @@ add_executable(stereo_kitti
         Examples/Stereo/stereo_kitti.cc)
 target_link_libraries(stereo_kitti ${PROJECT_NAME})
 
+add_executable(stereo_quest3
+        Examples/Stereo/stereo_quest3.cc)
+target_link_libraries(stereo_quest3 ${PROJECT_NAME})
+
 add_executable(stereo_euroc
         Examples/Stereo/stereo_euroc.cc)
 target_link_libraries(stereo_euroc ${PROJECT_NAME})
@@ -192,6 +196,10 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular)
 add_executable(mono_s20fe
         Examples/Monocular/mono_s20fe.cc)
 target_link_libraries(mono_s20fe ${PROJECT_NAME})
+
+add_executable(mono_quest3
+        Examples/Monocular/mono_quest3.cc)
+target_link_libraries(mono_quest3 ${PROJECT_NAME})
 
 add_executable(mono_tum
         Examples/Monocular/mono_tum.cc)

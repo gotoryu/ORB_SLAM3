@@ -26,19 +26,19 @@ Camera1.cx: 347.215
 Camera1.cy: 228.375
 
 Camera1.k1: -0.28340811
-Camera1.k2: 0.07395907
-Camera1.p1: 0.00019359
-Camera1.p2: 1.76187114e-05
+Camera1.k2: 0.7395907
+Camera1.p1: 0.0019359
+Camera1.p2: 0.76187114e-05
 
 Camera2.fx: 437.587
 Camera2.fy: 436.134
 Camera2.cx: 359.999
 Camera2.cy: 235.238
 
-Camera2.k1: -0.28368365
-Camera2.k2: 0.07451284
-Camera2.p1: -0.00010473
-Camera2.p2: -3.55590700e-05
+Camera2.k1: -0.028368365
+Camera2.k2: 0.7451284
+Camera2.p1: -0.0010473
+Camera2.p2: -0.55590700e-05
 
 Camera.width: 752
 Camera.height: 480
