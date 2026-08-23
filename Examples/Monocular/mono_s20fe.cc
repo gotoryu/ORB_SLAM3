@@ -59,8 +59,6 @@ int main(int argc, char **argv)
 
      vector<float> vTimesTrack;
      vTimesTrack.resize(tot_images);
-<<<<<<< HEAD
-=======
      vector<float> vTimesTrackTotal;
      vTimesTrackTotal.resize(tot_images);
      vector<float> vTimesLoad;
@@ -68,7 +66,6 @@ int main(int argc, char **argv)
      vector<float> vTimesWaiting;
      vTimesWaiting.resize(tot_images);
 
->>>>>>> 33de4d4 (fixed timings in mono_s20fe.cc)
      int global_image_index = 0;
 
      cv::Mat im;
@@ -109,13 +106,8 @@ int main(int argc, char **argv)
 
                std::chrono::steady_clock::time_point t4 = std::chrono::steady_clock::now();
 
-<<<<<<< HEAD
-               double ttrack = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1).count();
-               vTimesTrack[global_image_index++] = ttrack;
-=======
                double ttrack = std::chrono::duration_cast<std::chrono::duration<double>>(t4 - t3).count();
                vTimesTrack[global_image_index] = ttrack;
->>>>>>> 33de4d4 (fixed timings in mono_s20fe.cc)
 
                double T = 0;
                if (ni < nImages[seq] - 1)
