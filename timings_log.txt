@@ -1,0 +1,2207 @@
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 30 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid8'
+fps = 30
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 9
+Creation of new map with last KF id: 964
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 627
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:964; Map init KF:964
+New Map created with 154 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 8
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+ 
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0245059
+mean tracking time: 0.0239145
+mean total image processing time: 0.0461433
+mean loading time: 0.0126248
+mean waiting time: 0.00960312
+total time: 28.9318
+total SLAM time: 14.9944
+total load time: 7.91575
+total waiting time: 6.02116
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 30 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid8'
+fps = 30
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 10
+Creation of new map with last KF id: 1058
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 627
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:1058; Map init KF:1058
+New Map created with 154 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 9
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0248324
+mean tracking time: 0.0243584
+mean total image processing time: 0.0461894
+mean loading time: 0.0126911
+mean waiting time: 0.00913913
+total time: 28.9608
+total SLAM time: 15.2727
+total load time: 7.95732
+total waiting time: 5.73023
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 45 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid8'
+fps = 45
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 11
+Creation of new map with last KF id: 1127
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 627
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:1127; Map init KF:1127
+New Map created with 154 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 10
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0231417
+mean tracking time: 0.0235822
+mean total image processing time: 0.0373288
+mean loading time: 0.0124277
+mean waiting time: 0.00131806
+total time: 23.4052
+total SLAM time: 14.7861
+total load time: 7.79217
+total waiting time: 0.826422
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ cd build
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/build$ make -j16
+[ 27%] Built target g2o
+[ 52%] Built target ORB_SLAM3
+[ 54%] Built target mono_quest3
+[ 56%] Built target stereo_quest3
+[ 57%] Built target rgbd_tum
+[ 58%] Built target mono_tum
+[ 60%] Built target stereo_tum_vi
+[ 61%] Built target stereo_kitti
+[ 63%] Built target stereo_euroc
+[ 65%] Built target mono_euroc
+[ 66%] Built target stereo_inertial_euroc
+[ 68%] Built target mono_inertial_tum_vi
+[ 69%] Built target mono_kitti
+[ 70%] Built target mono_inertial_euroc
+[ 72%] Built target stereo_inertial_tum_vi
+[ 74%] Built target mono_tum_vi
+[ 75%] Building CXX object CMakeFiles/mono_s20fe.dir/Examples/Monocular/mono_s20fe.cc.o
+[ 77%] Built target rgbd_tum_old
+[ 79%] Built target stereo_kitti_old
+[ 81%] Built target stereo_tum_vi_old
+[ 83%] Built target stereo_euroc_old
+[ 85%] Built target mono_euroc_old
+[ 87%] Built target mono_tum_old
+[ 89%] Built target mono_tum_vi_old
+[ 93%] Built target mono_inertial_euroc_old
+[ 93%] Built target stereo_inertial_tum_vi_old
+[ 95%] Built target stereo_inertial_euroc_old
+[ 97%] Built target mono_kitti_old
+[ 99%] Built target mono_inertial_tum_vi_old
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/DBoW2/DBoW2/FORB.h:17,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/ORBVocabulary.h:23,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/KeyFrame.h:26,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/MapPoint.h:23,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/FrameDrawer.h:24,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Viewer.h:23,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Tracking.h:26,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/System.h:31,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Monocular/mono_s20fe.cc:6:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/DBoW2/DBoW2/FClass.h:35:16: warning: ‘virtual void DBoW2::FClass::meanValue(const std::vector<const TDescriptor*>&, TDescriptor&)’ was hidden [-Woverloaded-virtual=]
+   35 |   virtual void meanValue(const std::vector<pDescriptor> &descriptors,
+      |                ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/DBoW2/DBoW2/FORB.h:38:15: note:   by ‘static void DBoW2::FORB::meanValue(const std::vector<const cv::Mat*>&, TDescriptor&)’
+   38 |   static void meanValue(const std::vector<pDescriptor> &descriptors,
+      |               ^~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Frame.h:30,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/KeyFrame.h:28:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/ImuTypes.h: In member function ‘void ORB_SLAM3::IMU::Preintegrated::printMeasurements() const’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/ImuTypes.h:204:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ORB_SLAM3::IMU::Preintegrated::integrable>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  204 |         for(int i=0; i<mvMeasurements.size(); i++){
+      |                      ~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Converter.h:26,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Frame.h:33:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: At global scope:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          ^~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:161,
+                 from /usr/include/eigen3/Eigen/LU:11,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/Sophus/sophus/so2.hpp:12,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/Sophus/sophus/se2.hpp:7,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/Sophus/sophus/geometry.hpp:7,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Frame.h:28:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  ^~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_sba.h:40:35:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<6, g2o::SE3Quat>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘class g2o::BaseVertex<7, g2o::Sim3>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & AlignedBit ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘class g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:   required from here
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80: warning: ‘Eigen::AlignedBit’ is deprecated [-Wdeprecated-declarations]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & AlignedBit ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          ~~~~~~^~~~~~~~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37: note: declared here
+  167 | EIGEN_DEPRECATED const unsigned int AlignedBit = 0x80;
+      |                                     ^~~~~~~~~~
+In file included from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/Atlas.h:27,
+                 from /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/FrameDrawer.h:25:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:47:9: warning:   when initialized here [-Wreorder]
+   47 |         KannalaBrandt8(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLappingArea(2,0) ,tvr(nullptr) {
+      |         ^~~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>, float)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:53:9: warning:   when initialized here [-Wreorder]
+   53 |         KannalaBrandt8(const std::vector<float> _vParameters, const float _precision) : GeometricCamera(_vParameters),
+      |         ^~~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h: In constructor ‘ORB_SLAM3::KannalaBrandt8::KannalaBrandt8(ORB_SLAM3::KannalaBrandt8*)’:
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:102:21: warning: ‘ORB_SLAM3::KannalaBrandt8::precision’ will be initialized after [-Wreorder]
+  102 |         const float precision;
+      |                     ^~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:88:26: warning:   ‘std::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea’ [-Wreorder]
+   88 |         std::vector<int> mvLappingArea;
+      |                          ^~~~~~~~~~~~~
+/home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/include/CameraModels/KannalaBrandt8.h:59:9: warning:   when initialized here [-Wreorder]
+   59 |         KannalaBrandt8(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {
+      |         ^~~~~~~~~~~~~~
+[100%] Linking CXX executable /home/badi/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/Examples/Monocular/mono_s20fe
+[100%] Built target mono_s20fe
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy/build$ cd ..
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 45 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid8'
+fps = 45
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 12
+Creation of new map with last KF id: 1193
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 627
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:1193; Map init KF:1193
+New Map created with 154 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 11
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0238513
+mean tracking time: 0.0239805
+mean total image processing time: 0.036446
+mean loading time: 0.0124647
+mean waiting time: 2.57607e-08
+total time: 22.8517
+total SLAM time: 15.0358
+total load time: 7.81537
+total waiting time: 1.6152e-05
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 30 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid8'
+fps = 30
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 13
+Creation of new map with last KF id: 1250
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 627
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:1250; Map init KF:1250
+New Map created with 154 points
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Creation of new map with id: 14
+Stored map with ID: 13
+Creation of new map with last KF id: 1310
+First KF:1310; Map init KF:1310
+New Map created with 509 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 12
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0236894
+mean tracking time: 0.0233438
+mean total image processing time: 0.0370594
+mean loading time: 0.0125005
+mean waiting time: 0.00121442
+total time: 23.2363
+total SLAM time: 14.6365
+total load time: 7.83779
+total waiting time: 0.761442
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 20 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid8'
+fps = 20
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 15
+Creation of new map with last KF id: 1332
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 627
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:1332; Map init KF:1332
+New Map created with 154 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 14
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0238701
+mean tracking time: 0.0239392
+mean total image processing time: 0.0501827
+mean loading time: 0.0126596
+mean waiting time: 0.0135831
+total time: 31.4645
+total SLAM time: 15.0099
+total load time: 7.9376
+total waiting time: 8.51658
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 10 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid8'
+fps = 10
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 16
+Creation of new map with last KF id: 1405
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 627
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:1405; Map init KF:1405
+New Map created with 154 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 15
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+^C
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 50 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid6'
+fps = 50
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 16
+Creation of new map with last KF id: 1405
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 13618
+
+QSocketNotifier: Can only be used with threads started with QThread
+First KF:1405; Map init KF:1405
+New Map created with 391 points
+Starting the Viewer
+*Merge detected
+Local Mapping STOP
+Change to map with id: 15
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+Local Mapping STOP
+Local Mapping RELEASE
+Local Mapping STOP
+Local Mapping RELEASE
+Local Mapping STOP
+Local Mapping RELEASE
+Fail to track local map!
+Creation of new map with id: 17
+Stored map with ID: 16
+Creation of new map with last KF id: 1452
+First KF:1452; Map init KF:1452
+New Map created with 397 points
+Local Mapping STOP
+Local Mapping RELEASE
+Local Mapping STOP
+Local Mapping RELEASE
+Local Mapping STOP
+Local Mapping RELEASE
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 0
+mnInitialFrameId = 14451
+0 Frames set to lost
+First KF:1462; Map init KF:1452
+New Map created with 410 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 16
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+*Loop detected
+Local Mapping STOP
+Local Mapping RELEASE
+Local Mapping STOP
+Local Mapping RELEASE
+*Loop detected
+Local Mapping STOP
+Local Mapping RELEASE
+Local Mapping STOP
+Local Mapping RELEASE
+^C
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 50 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid6'
+fps = 50
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 16
+Creation of new map with last KF id: 1405
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 13618
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:1405; Map init KF:1405
+New Map created with 363 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 15
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+^C
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 50 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid8'
+fps = 50
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 16
+Creation of new map with last KF id: 1405
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 627
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:1405; Map init KF:1405
+New Map created with 428 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 15
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0246006
+mean tracking time: 0.0248898
+mean total image processing time: 0.0742784
+mean loading time: 0.0493878
+mean waiting time: 4.03253e-08
+total time: 46.5725
+total SLAM time: 15.6059
+total load time: 30.9661
+total waiting time: 2.5284e-05
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 50 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid8'
+fps = 50
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+System.LoadAtlasFromFile optional parameter does not exist...
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Initialization of Atlas from scratch 
+Creation of new map with id: 0
+Creation of new map with last KF id: 0
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 627
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:0; Map init KF:0
+New Map created with 154 points
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0194684
+mean tracking time: 0.0202615
+mean total image processing time: 0.0331063
+mean loading time: 0.012844
+mean waiting time: 2.67049e-08
+total time: 20.7577
+total SLAM time: 12.704
+total load time: 8.05321
+total waiting time: 1.6744e-05
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 50 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid8'
+fps = 50
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+System.LoadAtlasFromFile optional parameter does not exist...
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Initialization of Atlas from scratch 
+Creation of new map with id: 0
+Creation of new map with last KF id: 0
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 627
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:0; Map init KF:0
+New Map created with 154 points
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0191645
+mean tracking time: 0.0199222
+mean total image processing time: 0.03252
+mean loading time: 0.012597
+mean waiting time: 2.62217e-08
+total time: 20.39
+total SLAM time: 12.4912
+total load time: 7.89833
+total waiting time: 1.6441e-05
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ 
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 50 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid8'
+fps = 50
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 1
+Creation of new map with last KF id: 172
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 627
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:172; Map init KF:172
+New Map created with 154 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 0
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0221061
+mean tracking time: 0.0220632
+mean total image processing time: 0.0345886
+mean loading time: 0.0125245
+mean waiting time: 3.91945e-08
+total time: 21.687
+total SLAM time: 13.8336
+total load time: 7.85287
+total waiting time: 2.45749e-05
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 50 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid7'
+fps = 50
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 2
+Creation of new map with last KF id: 237
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 1700
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:237; Map init KF:237
+New Map created with 259 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 1
+Local Mapping RELEASE
+Local Mapping STOP
+Local Mapping RELEASE
+Merge finished!
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0211872
+mean tracking time: 0.0221807
+mean total image processing time: 0.0718742
+mean loading time: 0.0496926
+mean waiting time: 4.03964e-08
+total time: 122.186
+total SLAM time: 37.7071
+total load time: 84.4774
+total waiting time: 6.86738e-05
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 50 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid8'
+fps = 50
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 3
+Creation of new map with last KF id: 651
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 627
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:651; Map init KF:651
+New Map created with 154 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 2
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0230333
+mean tracking time: 0.0230323
+mean total image processing time: 0.0355836
+mean loading time: 0.0125506
+mean waiting time: 4.06411e-08
+total time: 22.3109
+total SLAM time: 14.4412
+total load time: 7.86922
+total waiting time: 2.5482e-05
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 50 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid9'
+fps = 50
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 4
+Creation of new map with last KF id: 719
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 1526
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:719; Map init KF:719
+New Map created with 96 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 3
+Local Mapping RELEASE
+Local Mapping STOP
+Local Mapping RELEASE
+Merge finished!
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0222128
+mean tracking time: 0.0232967
+mean total image processing time: 0.0683352
+mean loading time: 0.0450376
+mean waiting time: 3.65025e-08
+total time: 104.28
+total SLAM time: 35.5508
+total load time: 68.7273
+total waiting time: 5.57028e-05
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 50 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid10'
+fps = 50
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 5
+Creation of new map with last KF id: 1047
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 1528
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:1047; Map init KF:1047
+New Map created with 198 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 4
+Local Mapping RELEASE
+Local Mapping STOP
+Local Mapping RELEASE
+Merge finished!
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.021127
+mean tracking time: 0.0236067
+mean total image processing time: 0.0740335
+mean loading time: 0.0504259
+mean waiting time: 4.18173e-08
+total time: 113.123
+total SLAM time: 36.071
+total load time: 77.0508
+total waiting time: 6.38969e-05
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 50 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid11'
+fps = 50
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 6
+Creation of new map with last KF id: 1372
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 1193
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:1372; Map init KF:1372
+New Map created with 214 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 5
+Local Mapping RELEASE
+Local Mapping STOP
+Local Mapping RELEASE
+Merge finished!
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0213068
+mean tracking time: 0.024506
+mean total image processing time: 0.0692417
+mean loading time: 0.0447346
+mean waiting time: 4.39388e-08
+total time: 82.6053
+total SLAM time: 29.2357
+total load time: 53.3684
+total waiting time: 5.2419e-05
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
+badi@badi-Yoga-9-14ITL5:~/Documents/Bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_s20fe Vocabulary/ORBvoc.txt '/home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml' 50 '/media/badi/0C8C7F658C7F486A/datasets/Phone/Phone/House_Videos/vid8'
+fps = 50
+num_seq = 1
+Loading images for sequence 0...
+LOADED!
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/badi/Documents/Bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Camera1.k3 optional parameter does not exist...
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
+	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
+	-Original image size: [ 1280 , 720 ]
+	-Current image size: [ 1280 , 720 ]
+	-Sequence FPS: 30
+	-Features per image: 1200
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Load File
+Initialization of Atlas from file: LIVING_ROOM_1
+Starting to read the save binary file
+End to load the save binary file
+Creation of new map with id: 7
+Creation of new map with last KF id: 1606
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence 0 ...
+Images in the sequence: 627
+
+QSocketNotifier: Can only be used with threads started with QThread
+Starting the Viewer
+First KF:1606; Map init KF:1606
+New Map created with 154 points
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 0
+mnInitialFrameId = 0
+197 Frames set to lost
+First KF:1651; Map init KF:1606
+New Map created with 309 points
+*Merge detected
+Local Mapping STOP
+Change to map with id: 6
+Local Mapping RELEASE
+Local Mapping RELEASE
+Merge finished!
+
+----------------------------------
+Video processing finished. The map is now stabilizing.
+You can safely explore the map in the viewer.
+Press ENTER in this terminal to save the map and exit...
+----------------------------------
+
+
+Shutting down SLAM System ...
+Waiting for threads to finish ...
+Starting to write the save binary file
+End to write save binary file
+
+Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
+
+-------
+
+median tracking time: 0.0227381
+mean tracking time: 0.0228559
+mean total image processing time: 0.0352155
+mean loading time: 0.0123588
+mean waiting time: 3.15885e-08
+total time: 22.0801
+total SLAM time: 14.3307
+total load time: 7.74895
+total waiting time: 1.9806e-05
+Exiting application...
+QObject::killTimer: Timers cannot be stopped from another thread
+QObject::~QObject: Timers cannot be stopped from another thread
