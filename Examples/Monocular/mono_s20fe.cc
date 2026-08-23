@@ -59,6 +59,7 @@ int main(int argc, char **argv)
 
      vector<float> vTimesTrack;
      vTimesTrack.resize(tot_images);
+     int global_image_index = 0;
 
      cv::Mat im;
      for (seq = 0; seq < num_seq; seq++)
@@ -96,7 +97,7 @@ int main(int argc, char **argv)
                std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
 
                double ttrack = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1).count();
-               vTimesTrack[ni * (seq + 1)] = ttrack;
+               vTimesTrack[global_image_index++] = ttrack;
 
                double T = 0;
                if (ni < nImages[seq] - 1)
