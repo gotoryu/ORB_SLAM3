@@ -1,5 +1,8 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.5)
 project(ORB_SLAM3)
+
+# Generate compile_commands.json for IDE tooling (references, navigation, static analysis).
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 IF(NOT CMAKE_BUILD_TYPE)
   SET(CMAKE_BUILD_TYPE Release)
@@ -111,7 +114,9 @@ include/GeometricTools.h
 include/TwoViewReconstruction.h
 include/SerializationUtils.h
 include/Config.h
-include/Settings.h)
+include/Settings.h
+include/StandaloneViewer.h
+src/StandaloneViewer.cc)
 
 add_subdirectory(Thirdparty/g2o)
 
@@ -137,6 +142,11 @@ endif()
 
 
 # Build examples
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Standalone_Viewer)
+
+add_executable(SA_Viewer
+        Standalone_Viewer/saViewer.cc)
+target_link_libraries(SA_Viewer ${PROJECT_NAME})
 
 # RGB-D examples
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/RGB-D)

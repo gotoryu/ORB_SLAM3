@@ -7,6 +7,9 @@
 # Unignore all dirs
 !*/
 
+.vscode/
+compile_commands.json
+
 CMakeLists.txt.user
 CMakeLists_modified.txt
 

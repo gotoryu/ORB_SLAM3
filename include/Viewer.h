@@ -43,6 +43,8 @@ public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW
     Viewer(System* pSystem, FrameDrawer* pFrameDrawer, MapDrawer* pMapDrawer, Tracking *pTracking, const string &strSettingPath, Settings* settings);
 
+    Viewer(MapDrawer *pMapDrawer, const string &strSettingPath);
+
     void newParameterLoader(Settings* settings);
 
     // Main thread function. Draw points, keyframes, the current camera pose and the last processed
@@ -64,6 +66,7 @@ public:
     //void SetTrackingPause();
 
     bool both;
+    bool viewOnly;
 private:
 
     bool ParseViewerParamFile(cv::FileStorage &fSettings);
