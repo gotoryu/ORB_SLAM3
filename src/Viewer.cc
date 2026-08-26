@@ -55,9 +55,9 @@ Viewer::Viewer(System* pSystem, FrameDrawer *pFrameDrawer, MapDrawer *pMapDrawer
     mbStopTrack = false;
 }
 
-Viewer::Viewer(MapDrawer *pMapDrawer, const string &strSettingPath) : 
+Viewer::Viewer(StandaloneViewer *saViewer, MapDrawer *pMapDrawer, const string &strSettingPath) : 
         both(false), viewOnly(true), mpSystem(nullptr), mpFrameDrawer(nullptr), 
-        mpMapDrawer(pMapDrawer), mpTracker(nullptr),
+        mpSAViewer(saViewer), mpMapDrawer(pMapDrawer), mpTracker(nullptr),
         mbFinishRequested(false), mbFinished(false), mbStopped(false), mbStopRequested(false)
 {
     cv::FileStorage fSettings(strSettingPath, cv::FileStorage::READ);
@@ -198,7 +198,8 @@ void Viewer::Run()
     glEnable (GL_BLEND);
     glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-    pangolin::CreatePanel("menu").SetBounds(0.0,1.0,0.0,pangolin::Attach::Pix(175));
+    int menuWidth = 230;
+    pangolin::CreatePanel("menu").SetBounds(0.0,1.0,0.0,pangolin::Attach::Pix(menuWidth));
 
     // Define Camera Render Object (for view / scene browsing)
     pangolin::OpenGlRenderState s_cam(
@@ -208,7 +209,7 @@ void Viewer::Run()
 
     // Add named OpenGL viewport to window and provide 3D Handler
     pangolin::View& d_cam = pangolin::CreateDisplay()
-            .SetBounds(0.0, 1.0, pangolin::Attach::Pix(175), 1.0, -1024.0f/768.0f)
+            .SetBounds(0.0, 1.0, pangolin::Attach::Pix(menuWidth), 1.0, -1024.0f/768.0f)
             .SetHandler(new pangolin::Handler3D(s_cam));
 
     if (!viewOnly) {
@@ -413,6 +414,8 @@ void Viewer::Run()
         pangolin::Var<bool> menuShowKeyFrames("menu.Show KeyFrames",true,true);
         pangolin::Var<bool> menuShowGraph("menu.Show Graph",true,true);
         pangolin::Var<bool> menuShowInertialGraph("menu.Show Inertial Graph",true,true);
+        pangolin::Var<int> menuSetCurrentMap("menu.Current Map Index", mpSAViewer->GetCurrentMapIdx(), 0, mpSAViewer->GetNumberOfMaps()-1);
+        pangolin::Var<int> menuCurrentMapId("menu.Current Map Id:", mpSAViewer->GetCurrentMap()->GetId());
 
         pangolin::OpenGlMatrix Twc, Twr;
         Twc.SetIdentity();
@@ -420,6 +423,8 @@ void Viewer::Run()
         Ow.SetIdentity();
 
         menuShowGraph = true;
+
+        int lastMapIdx = mpSAViewer->GetCurrentMapIdx();
 
         while(1) {
             glClearColor(1.0f,1.0f,1.0f,1.0f);
@@ -431,6 +436,12 @@ void Viewer::Run()
                 mpMapDrawer->DrawKeyFrames(menuShowKeyFrames,menuShowGraph, menuShowInertialGraph, false);
             if(menuShowPoints)
                 mpMapDrawer->DrawMapPoints();
+
+            if (menuSetCurrentMap != lastMapIdx) {
+                mpSAViewer->ChangeMap(menuSetCurrentMap);
+                menuCurrentMapId = mpSAViewer->GetCurrentMap()->GetId();
+                lastMapIdx = menuSetCurrentMap;
+            }
 
             pangolin::FinishFrame();
 

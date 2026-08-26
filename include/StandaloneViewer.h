@@ -10,6 +10,7 @@
 #include<thread>
 #include<opencv2/core/core.hpp>
 #include <thread>
+#include <vector>
 
 namespace ORB_SLAM3 {
     class Atlas;
@@ -18,6 +19,14 @@ namespace ORB_SLAM3 {
     class StandaloneViewer {
     public:
         StandaloneViewer(const string &pStrLoadAtlasFromFile, const string &strVocFile, const string &strSettingsFile);
+
+        Map *GetCurrentMap();
+
+        int GetCurrentMapIdx();
+
+        int GetNumberOfMaps();
+
+        void ChangeMap(int mapIdx);
 
         enum FileType{
             TEXT_FILE=0,
@@ -35,6 +44,9 @@ namespace ORB_SLAM3 {
         Atlas* mpAtlas;
         Viewer* mpViewer;
         std::thread* mptViewer;
+        Map* pCurrentMap = nullptr;
+        int pCurrentMapIdx = -1;
+        vector<Map*> mvpMaps;
 
         bool LoadAtlas(int type);
 

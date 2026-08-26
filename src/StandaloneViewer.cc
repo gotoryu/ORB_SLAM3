@@ -61,21 +61,25 @@ namespace ORB_SLAM3 {
             exit(-1);
         }
 
-        // set active map to the one with the most keyframes
-        if (!mpAtlas->GetAllMaps().empty()) {
-            Map* pBestMap = nullptr;
-            int maxKFs = -1;
+        mvpMaps = mpAtlas->GetAllMaps();
 
-            for (Map* pMap : mpAtlas->GetAllMaps()) {
+        // set active map to the one with the most keyframes
+        if (!mvpMaps.empty()) {
+            int maxKFs = -1;
+            int idx = 0;
+
+            for (Map* pMap : mvpMaps) {
                 if ((int)pMap->GetAllKeyFrames().size() > maxKFs) {
                     maxKFs = (int)pMap->GetAllKeyFrames().size();
-                    pBestMap = pMap;
+                    pCurrentMapIdx = idx;
+                    pCurrentMap = pMap;
                 }
+                idx++;
             }
 
-            if (pBestMap) {
-                cout << "Setting map with ID " << pBestMap->GetId() << " as active map." << endl;
-                mpAtlas->ChangeMap(pBestMap);
+            if (pCurrentMap) {
+                cout << "Setting map with ID " << pCurrentMap->GetId() << " as active map." << endl;
+                mpAtlas->ChangeMap(pCurrentMap);
             } else {
                 cout << "No maps found in the atlas." << endl;
             }
@@ -83,11 +87,33 @@ namespace ORB_SLAM3 {
         
         mpMapDrawer = new MapDrawer(mpAtlas, strSettingsFile, nullptr);
 
-        mpViewer = new Viewer(mpMapDrawer, strSettingsFile);
+        mpViewer = new Viewer(this, mpMapDrawer, strSettingsFile);
         mptViewer = new std::thread(&Viewer::Run, mpViewer);
 
         // Fix verbosity
         Verbose::SetTh(Verbose::VERBOSITY_QUIET);
+    }
+
+    Map* StandaloneViewer::GetCurrentMap() {
+        return pCurrentMap;
+    }
+
+    int StandaloneViewer::GetCurrentMapIdx() {
+        return pCurrentMapIdx;
+    }
+
+    int StandaloneViewer::GetNumberOfMaps() {
+        return (int)mvpMaps.size();
+    }
+
+    void StandaloneViewer::ChangeMap(int mapIdx) {
+        Map *pMap = mvpMaps[mapIdx];
+
+        if (pMap) {
+            mpAtlas->ChangeMap(pMap);
+            pCurrentMap = pMap;
+            pCurrentMapIdx = mapIdx;
+        }
     }
 
     bool StandaloneViewer::LoadAtlas(int type) {
