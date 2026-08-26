@@ -25,6 +25,7 @@
 #include "Tracking.h"
 #include "System.h"
 #include "Settings.h"
+#include "StandaloneViewer.h"
 
 #include <mutex>
 
@@ -36,12 +37,15 @@ class FrameDrawer;
 class MapDrawer;
 class System;
 class Settings;
+class StandaloneViewer;
 
 class Viewer
 {
 public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW
     Viewer(System* pSystem, FrameDrawer* pFrameDrawer, MapDrawer* pMapDrawer, Tracking *pTracking, const string &strSettingPath, Settings* settings);
+
+    Viewer(StandaloneViewer *saViewer, MapDrawer *pMapDrawer, const string &strSettingPath);
 
     void newParameterLoader(Settings* settings);
 
@@ -64,6 +68,7 @@ public:
     //void SetTrackingPause();
 
     bool both;
+    bool viewOnly;
 private:
 
     bool ParseViewerParamFile(cv::FileStorage &fSettings);
@@ -74,6 +79,7 @@ private:
     FrameDrawer* mpFrameDrawer;
     MapDrawer* mpMapDrawer;
     Tracking* mpTracker;
+    StandaloneViewer* mpSAViewer;
 
     // 1/fps in ms
     double mT;
