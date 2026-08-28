@@ -1,8 +1,10 @@
+badi@baelf:~/Documents/bachelorarbeit/ORB_SLAM3-Legacy$ ./Examples/Monocular/mono_quest3 Vocabulary/ORBvoc.txt '/home/badi/Documents/bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Quest3_pinhole_1280x960_4.yaml' 30 '/run/media/badi/0C8C7F658C7F486A/datasets/Recorder/Recorder/Recording_1280x960_18fps_mono_1'
 WARNING: CPU random generator seem to be failing, disabling hardware random number generation
 WARNING: RDRND generated: 0xffffffff 0xffffffff 0xffffffff 0xffffffff
-fps = 60
+fps = 30
 num_seq = 1
 Loading images for sequence 0...
+Image name format: 12345.png (framerate is fixed at 30 FPS)
 LOADED!
 
 ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
@@ -12,7 +14,7 @@ This is free software, and you are welcome to redistribute it
 under certain conditions. See LICENSE.txt.
 
 Input sensor was set to: Monocular
-Loading settings from /home/badi/Documents/bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Phone_1280x720_3.yaml
+Loading settings from /home/badi/Documents/bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Quest3_pinhole_1280x960_4.yaml
 Camera1.k3 optional parameter does not exist...
 	-Loaded camera 1
 Camera.newHeight optional parameter does not exist...
@@ -25,63 +27,44 @@ System.thFarPoints optional parameter does not exist...
 	-Loaded misc parameters
 ----------------------------------
 SLAM settings: 
-	-Camera 1 parameters (Pinhole): [ 513.338 514.101 636.84 379.26 ]
-	-Camera 1 distortion parameters: [  0.014084 -0.019244 0.005573 0.000832 ]
-	-Original image size: [ 1280 , 720 ]
-	-Current image size: [ 1280 , 720 ]
-	-Sequence FPS: 30
+	-Camera 1 parameters (Pinhole): [ 896.76 896.557 634.664 490.376 ]
+	-Camera 1 distortion parameters: [  0 0 0 0 ]
+	-Original image size: [ 1280 , 960 ]
+	-Current image size: [ 1280 , 960 ]
+	-Sequence FPS: 18
 	-Features per image: 1200
 	-ORB scale factor: 1.2
 	-ORB number of scales: 8
-	-Initial FAST threshold: 20
-	-Min FAST threshold: 7
+	-Initial FAST threshold: 10
+	-Min FAST threshold: 3
 
 
 Loading ORB Vocabulary. This could take a while...
 Vocabulary loaded!
 
 Load File
-Initialization of Atlas from file: S20FE_1280x720_Map
+Initialization of Atlas from file: HCI_CO-WORKING_SPACE_3
 Starting to read the save binary file
 End to load the save binary file
-Creation of new map with id: 21
-Creation of new map with last KF id: 910
+Creation of new map with id: 18
+Creation of new map with last KF id: 1905
 Seq. Name: 
-There are 1 cameras in the atlas
+There are 2 cameras in the atlas
+Camera 0 is pinhole
 Camera 0 is pinhole
 
 -------
 Start processing sequence 0 ...
-Images in the sequence: 566
+Images in the sequence: 2421
 
 QSocketNotifier: Can only be used with threads started with QThread
+First KF:1905; Map init KF:1905
+New Map created with 165 points
 Starting the Viewer
-First KF:910; Map init KF:910
-New Map created with 124 points
 *Merge detected
 Local Mapping STOP
-Change to map with id: 20
 Local Mapping RELEASE
 Local Mapping RELEASE
 Merge finished!
+Segmentation fault         (core dumped) ./Examples/Monocular/mono_quest3 Vocabulary/ORBvoc.txt '/home/badi/Documents/bachelorarbeit/indoor-localization/unity_project/Assets/StreamingAssets/Quest3_pinhole_1280x960_4.yaml' 30 '/run/media/badi/0C8C7F658C7F486A/datasets/Recorder/Recorder/Recording_1280x960_18fps_mono_1'
 
-----------------------------------
-Video processing finished. The map is now stabilizing.
-You can safely explore the map in the viewer.
-Press ENTER in this terminal to save the map and exit...
-----------------------------------
-
-Shutting down SLAM System ...
-Waiting for threads to finish ...
-Starting to write the save binary file
-End to write save binary file
-
-Saving keyframe trajectory to KeyFrameTrajectory_S20FE.txt ...
-
--------
-
-median tracking time: 0.0231499
-mean tracking time: 0.0233487
-Exiting application...
-QObject::killTimer: Timers cannot be stopped from another thread
-QObject::~QObject: Timers cannot be stopped from another thread

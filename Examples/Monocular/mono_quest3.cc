@@ -57,12 +57,16 @@ int main(int argc, char **argv)
      ORB_SLAM3::System SLAM(argv[1], argv[2], ORB_SLAM3::System::MONOCULAR, true);
      float imageScale = SLAM.GetImageScale();
 
-     vector<float> vTimesTrack;
+     vector<float> vTimesTrack, vTimesTrackTotal, vTimesLoad, vTimesWaiting;
      vTimesTrack.resize(tot_images);
+     vTimesTrackTotal.resize(tot_images);
+     vTimesLoad.resize(tot_images);
+     vTimesWaiting.resize(tot_images);
+
      cv::Ptr<cv::CLAHE> clahe = cv::createCLAHE(3.0, cv::Size(8, 8));
      cv::Mat im;
      int global_image_index = 0;
-     
+
      for (seq = 0; seq < num_seq; seq++)
      {
           cout << endl
@@ -73,7 +77,10 @@ int main(int argc, char **argv)
 
           for (int ni = 0; ni < nImages[seq]; ni++)
           {
+               std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
                im = cv::imread(vstrImages[seq][ni], cv::IMREAD_GRAYSCALE);
+               std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
+
                double tframe = vTimestamps[seq][ni];
 
                if (im.empty())
@@ -91,16 +98,16 @@ int main(int argc, char **argv)
                     cv::resize(im, im, cv::Size(width, height));
                }
 
-               clahe->apply(im, im);
+               // clahe->apply(im, im);
 
-               std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
+               std::chrono::steady_clock::time_point t3 = std::chrono::steady_clock::now();
 
                SLAM.TrackMonocular(im, tframe);
 
-               std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
+               std::chrono::steady_clock::time_point t4 = std::chrono::steady_clock::now();
 
-               double ttrack = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1).count();
-               vTimesTrack[global_image_index++] = ttrack;
+               double ttrack = std::chrono::duration_cast<std::chrono::duration<double>>(t4 - t3).count();
+               vTimesTrack[global_image_index] = ttrack;
 
                double T = 0;
                if (ni < nImages[seq] - 1)
@@ -112,10 +119,17 @@ int main(int argc, char **argv)
                     T = tframe - vTimestamps[seq][ni - 1];
                }
 
-               if (ttrack < T)
+               std::chrono::steady_clock::time_point t5 = std::chrono::steady_clock::now();
+               double t_current_image = std::chrono::duration_cast<std::chrono::duration<double>>(t5 - t1).count();
+               if (t_current_image < T)
                {
-                    usleep((T - ttrack) * 1e6);
+                    usleep((T - t_current_image) * 1e6);
                }
+
+               std::chrono::steady_clock::time_point t6 = std::chrono::steady_clock::now();
+               vTimesTrackTotal[global_image_index] = std::chrono::duration_cast<std::chrono::duration<double>>(t6 - t1).count();
+               vTimesWaiting[global_image_index] = std::chrono::duration_cast<std::chrono::duration<double>>(t6 - t5).count();
+               vTimesLoad[global_image_index++] = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1).count();
           }
      }
 
@@ -133,16 +147,30 @@ int main(int argc, char **argv)
      SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory_Quest3.txt");
 
      sort(vTimesTrack.begin(), vTimesTrack.end());
-     float totaltime = 0;
+     float total_slam_time = 0;
+     float total_time = 0;
+     float total_load_time = 0;
+     float total_waiting_time = 0;
+
      for (int ni = 0; ni < tot_images; ni++)
      {
-          totaltime += vTimesTrack[ni];
+          total_slam_time += vTimesTrack[ni];
+          total_time += vTimesTrackTotal[ni];
+          total_load_time += vTimesLoad[ni];
+          total_waiting_time += vTimesWaiting[ni];
      }
 
      cout << "\n-------" << endl
           << endl;
      cout << "median tracking time: " << vTimesTrack[tot_images / 2] << endl;
-     cout << "mean tracking time: " << totaltime / tot_images << endl;
+     cout << "mean tracking time: " << total_slam_time / tot_images << endl;
+     cout << "mean total image processing time: " << total_time / tot_images << endl;
+     cout << "mean loading time: " << total_load_time / tot_images << endl;
+     cout << "mean waiting time: " << total_waiting_time / tot_images << endl;
+     cout << "total time: " << total_time << endl;
+     cout << "total SLAM time: " << total_slam_time << endl;
+     cout << "total load time: " << total_load_time << endl;
+     cout << "total waiting time: " << total_waiting_time << endl;
 
      std::cout << "Exiting application..." << std::endl;
 
