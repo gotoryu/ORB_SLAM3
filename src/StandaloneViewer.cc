@@ -17,7 +17,7 @@ namespace ORB_SLAM3 {
                                        const string &strSettingsFile) : 
                                         mStrLoadAtlasFromFile(pStrLoadAtlasFromFile),
                                         mStrVocabularyFilePath(strVocFile), mptViewer(nullptr), 
-                                        mpViewer(nullptr)
+                                        mpViewer(nullptr), isSaving(false)
     {
         cout << endl
                 << "=====================================================================" << endl
@@ -116,16 +116,68 @@ namespace ORB_SLAM3 {
         }
     }
 
+    void StandaloneViewer::DeleteSubmap() {
+        if (mvpMaps.size() <= 1) {
+            cout << "[StandaloneViewer] Warning: Cannot delete the last remaining submap in the Atlas!" << endl;
+            return;
+        }
+    
+        if (pCurrentMapIdx < 0 || pCurrentMapIdx >= (int)mvpMaps.size())
+            return;
+
+        badMaps.push_back(pCurrentMap);
+        badMapIndxs.push_back(pCurrentMapIdx);
+        mvpMaps.erase(mvpMaps.begin() + pCurrentMapIdx);
+
+        int newMapIdx = pCurrentMapIdx - 1;
+        if (newMapIdx >= 0) ChangeMap(newMapIdx);       // mvpMaps.size() must have been > 1 before deletion, bc index was >= 1 --> deleted element was not 1st
+        else ChangeMap(0);                              // newMapIdx < 0 --> 1st element was deleted 
+    }
+
+    void StandaloneViewer::SaveChanges() {
+        isSaving = true;
+        while (!badMaps.empty()) {
+            Map *pMap = badMaps.front();
+
+            mpAtlas->SetMapBad(pMap);
+
+            badMaps.erase(badMaps.begin());
+            badMapIndxs.erase(badMapIndxs.begin());
+        }
+
+        mpAtlas->RemoveBadMaps();
+
+        if (!mStrLoadAtlasFromFile.empty())
+        {
+            Verbose::PrintMess("Atlas saving to file " + mStrLoadAtlasFromFile, Verbose::VERBOSITY_NORMAL);
+            SaveAtlas(FileType::BINARY_FILE);
+        }
+
+        isSaving = false;
+    }
+
+    bool StandaloneViewer::IsSaving() {
+        return isSaving;
+    }
+
+    void StandaloneViewer::UndoChanges() {
+        while (!badMaps.empty()) {
+            Map *map = badMaps.back();
+            int idx = badMapIndxs.back();
+
+            mvpMaps.insert(mvpMaps.begin() + idx, map);
+            badMaps.pop_back();
+            badMapIndxs.pop_back();
+        }
+    }
+
     bool StandaloneViewer::LoadAtlas(int type) {
         string strFileVoc, strVocChecksum;
         bool isRead = false;
 
-        string pathLoadFileName = "./";
-        pathLoadFileName = pathLoadFileName.append(mStrLoadAtlasFromFile);
-
-        if (pathLoadFileName.find(".osa") == string::npos) {
-            pathLoadFileName += ".osa";
-        }
+        string pathLoadFileName = mStrLoadAtlasFromFile;
+        
+        cout << "load file name: " << pathLoadFileName << endl;
 
         if (type == BINARY_FILE) // File binary
         {
@@ -151,11 +203,11 @@ namespace ORB_SLAM3 {
             // Check if the vocabulary is the same
             string strInputVocabularyChecksum = CalculateCheckSum(mStrVocabularyFilePath, TEXT_FILE);
 
-            if (strInputVocabularyChecksum.compare(strVocChecksum) != 0) {
+            /*if (strInputVocabularyChecksum.compare(strVocChecksum) != 0) {
                 cout << "The vocabulary load isn't the same which the load session was created " << endl;
                 cout << "-Vocabulary name: " << strFileVoc << endl;
                 return false; // Both are differents
-            }
+            }*/
 
             mpAtlas->SetKeyFrameDababase(mpKeyFrameDatabase);
             mpAtlas->SetORBVocabulary(mpVocabulary);
@@ -164,6 +216,49 @@ namespace ORB_SLAM3 {
             return true;
         }
         return false;
+    }
+
+    void StandaloneViewer::SaveAtlas(int type)
+    {
+        if (!mStrLoadAtlasFromFile.empty())
+        {
+            // clock_t start = clock();
+
+            // Save the current session
+            mpAtlas->PreSave();
+
+            string pathSaveFileName = mStrLoadAtlasFromFile;
+
+            string strVocabularyChecksum = CalculateCheckSum(mStrVocabularyFilePath, TEXT_FILE);
+            std::size_t found = mStrVocabularyFilePath.find_last_of("/\\");
+            string strVocabularyName = mStrVocabularyFilePath.substr(found + 1);
+
+            if (type == TEXT_FILE) // File text
+            {
+                cout << "Starting to write the save text file " << endl;
+                std::remove(pathSaveFileName.c_str());
+                std::ofstream ofs(pathSaveFileName, std::ios::binary);
+                boost::archive::text_oarchive oa(ofs);
+
+                oa << strVocabularyName;
+                oa << strVocabularyChecksum;
+                oa << mpAtlas;
+                cout << "End to write the save text file" << endl;
+
+                
+            }
+            else if (type == BINARY_FILE) // File binary
+            {
+                cout << "Starting to write the save binary file" << endl;
+                std::remove(pathSaveFileName.c_str());
+                std::ofstream ofs(pathSaveFileName, std::ios::binary);
+                boost::archive::binary_oarchive oa(ofs);
+                oa << strVocabularyName;
+                oa << strVocabularyChecksum;
+                oa << mpAtlas;
+                cout << "End to write save binary file" << endl;
+            }
+        }
     }
 
     void StandaloneViewer::Shutdown()

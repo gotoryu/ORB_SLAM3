@@ -28,6 +28,14 @@ namespace ORB_SLAM3 {
 
         void ChangeMap(int mapIdx);
 
+        void DeleteSubmap();
+
+        void SaveChanges();
+
+        void UndoChanges();
+
+        bool IsSaving();
+
         enum FileType{
             TEXT_FILE=0,
             BINARY_FILE=1,
@@ -47,8 +55,14 @@ namespace ORB_SLAM3 {
         Map* pCurrentMap = nullptr;
         int pCurrentMapIdx = -1;
         vector<Map*> mvpMaps;
+        vector<Map*> badMaps;
+        vector<int> badMapIndxs;
+
+        bool isSaving;
 
         bool LoadAtlas(int type);
+
+        void SaveAtlas(int type);
 
         string CalculateCheckSum(string filename, int type);
     };

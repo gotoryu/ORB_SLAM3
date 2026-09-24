@@ -300,6 +300,8 @@ bool Atlas::isImuInitialized()
 
 void Atlas::PreSave()
 {
+    mvpBackupMaps.clear();
+
     if(mpCurrentMap){
         if(!mspMaps.empty() && mnLastInitKFidMap < mpCurrentMap->GetMaxKFid())
             mnLastInitKFidMap = mpCurrentMap->GetMaxKFid()+1; //The init KF is the next of current maximum
